@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1509419819D02ECD0039757B /* right arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1509419719D02ECD0039757B /* right arrow.png */; };
+		1509419A19D02F400039757B /* left arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1509419919D02F400039757B /* left arrow.png */; };
+		1509419E19D02FAE0039757B /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1509419D19D02FAE0039757B /* PresentationViewController.m */; };
+		1538C8E419A9D12700595557 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E219A9D12700595557 /* fb.png */; };
+		1538C8E519A9D12700595557 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E319A9D12700595557 /* twitter.png */; };
+		1538C8E919A9D13200595557 /* web forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E619A9D13200595557 /* web forward.png */; };
+		1538C8EA19A9D13200595557 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E719A9D13200595557 /* reload.png */; };
+		1538C8EB19A9D13200595557 /* web backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E819A9D13200595557 /* web backward.png */; };
+		1538C8ED19A9D1B900595557 /* tah.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8EC19A9D1B900595557 /* tah.png */; };
+		1554C64B19A8B15A00EE5A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64A19A8B15A00EE5A6E /* Foundation.framework */; };
+		1554C64D19A8B15A00EE5A6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64C19A8B15A00EE5A6E /* CoreGraphics.framework */; };
+		1554C64F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64E19A8B15A00EE5A6E /* UIKit.framework */; };
+		1554C65519A8B15A00EE5A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1554C65319A8B15A00EE5A6E /* InfoPlist.strings */; };
+		1554C65719A8B15A00EE5A6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C65619A8B15A00EE5A6E /* main.m */; };
+		1554C65B19A8B15A00EE5A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C65A19A8B15A00EE5A6E /* AppDelegate.m */; };
+		1554C65E19A8B15A00EE5A6E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1554C65C19A8B15A00EE5A6E /* Main_iPhone.storyboard */; };
+		1554C66619A8B15A00EE5A6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1554C66519A8B15A00EE5A6E /* Images.xcassets */; };
+		1554C66D19A8B15A00EE5A6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C66C19A8B15A00EE5A6E /* XCTest.framework */; };
+		1554C66E19A8B15A00EE5A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64A19A8B15A00EE5A6E /* Foundation.framework */; };
+		1554C66F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64E19A8B15A00EE5A6E /* UIKit.framework */; };
+		1554C67719A8B15A00EE5A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1554C67519A8B15A00EE5A6E /* InfoPlist.strings */; };
+		1554C67919A8B15A00EE5A6E /* TAH_Motion_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C67819A8B15A00EE5A6E /* TAH_Motion_ControlTests.m */; };
+		1554C68519A8B1E500EE5A6E /* TAHbleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C68419A8B1E500EE5A6E /* TAHbleTableController.m */; };
+		1554C68919A8B20300EE5A6E /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C68819A8B20300EE5A6E /* TAHble.m */; };
+		1554C68D19A8B21E00EE5A6E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C68C19A8B21E00EE5A6E /* CustomCell.m */; };
+		1554C69319A8B27200EE5A6E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69219A8B27200EE5A6E /* SettingsViewController.m */; };
+		1554C69619A8B27B00EE5A6E /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69519A8B27B00EE5A6E /* MediaViewController.m */; };
+		1554C69919A8B28400EE5A6E /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69819A8B28400EE5A6E /* SocialViewController.m */; };
+		1554C69C19A8B31600EE5A6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69B19A8B31600EE5A6E /* HomeViewController.m */; };
+		1554C69E19A8B43000EE5A6E /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1554C69D19A8B43000EE5A6E /* home.png */; };
+		156BB64419AAFB0600CBA4BD /* Main_iPhone3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156BB64319AAFB0600CBA4BD /* Main_iPhone3.5.storyboard */; };
+		156BB64619AB093E00CBA4BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156BB64519AB093E00CBA4BD /* AudioToolbox.framework */; };
+		156BB65419AB19DE00CBA4BD /* playpause.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB65319AB19DE00CBA4BD /* playpause.png */; };
+		156BB65B19AB212B00CBA4BD /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB65919AB212B00CBA4BD /* backward.png */; };
+		156BB66019AB24E400CBA4BD /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB65F19AB24E400CBA4BD /* forward.png */; };
+		156BB66719AB3DBF00CBA4BD /* voldown.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB66519AB3DBF00CBA4BD /* voldown.png */; };
+		156BB66819AB3DBF00CBA4BD /* volup.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB66619AB3DBF00CBA4BD /* volup.png */; };
+		156BB66A19AB46D600CBA4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156BB66919AB46D600CBA4BD /* CoreMotion.framework */; };
+		1591570E19D82C3D007D3A31 /* up white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1591570C19D82C3D007D3A31 /* up white.png */; };
+		1591570F19D82C3D007D3A31 /* up red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1591570D19D82C3D007D3A31 /* up red.png */; };
+		1591571219D8355B007D3A31 /* down white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1591571019D8355B007D3A31 /* down white.png */; };
+		1591571319D8355B007D3A31 /* down red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1591571119D8355B007D3A31 /* down red.png */; };
+		1597A90319AA327E00D51685 /* MACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597A90219AA327E00D51685 /* MACViewController.m */; };
+		1597A90619AA328B00D51685 /* WindowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597A90519AA328B00D51685 /* WindowsViewController.m */; };
+		1597A90A19AA373B00D51685 /* iTunesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597A90919AA373B00D51685 /* iTunesViewController.m */; };
+		1598788A19D4A47B00B2E81A /* up arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1598788819D4A47B00B2E81A /* up arrow.png */; };
+		1598788B19D4A47B00B2E81A /* down arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1598788919D4A47B00B2E81A /* down arrow.png */; };
+		159E8D1019EA52C300725C5F /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 159E8D0F19EA52C300725C5F /* ring.png */; };
+		159E8D1419EA560300725C5F /* mediaplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 159E8D1319EA560300725C5F /* mediaplayer.png */; };
+		159E8D1619EA573900725C5F /* Presentation.png in Resources */ = {isa = PBXBuildFile; fileRef = 159E8D1519EA573900725C5F /* Presentation.png */; };
+		15A43CF519A9AC48009FBA55 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CF419A9AC48009FBA55 /* red.png */; };
+		15A43CF819A9B1C8009FBA55 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CF619A9B1C8009FBA55 /* settings.png */; };
+		15A43CF919A9B1C8009FBA55 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CF719A9B1C8009FBA55 /* youtube.png */; };
+		15A43CFB19A9B1D1009FBA55 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CFA19A9B1D1009FBA55 /* share.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1554C67019A8B15A00EE5A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1554C63F19A8B15A00EE5A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1554C64619A8B15A00EE5A6E;
+			remoteInfo = "TAH Motion Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1509419719D02ECD0039757B /* right arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right arrow.png"; sourceTree = "<group>"; };
+		1509419919D02F400039757B /* left arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left arrow.png"; sourceTree = "<group>"; };
+		1509419C19D02FAE0039757B /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationViewController.h; sourceTree = "<group>"; };
+		1509419D19D02FAE0039757B /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationViewController.m; sourceTree = "<group>"; };
+		1538C8E219A9D12700595557 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		1538C8E319A9D12700595557 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		1538C8E619A9D13200595557 /* web forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web forward.png"; sourceTree = "<group>"; };
+		1538C8E719A9D13200595557 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		1538C8E819A9D13200595557 /* web backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web backward.png"; sourceTree = "<group>"; };
+		1538C8EC19A9D1B900595557 /* tah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tah.png; sourceTree = "<group>"; };
+		1554C64719A8B15A00EE5A6E /* TAH Motion Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAH Motion Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1554C64A19A8B15A00EE5A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1554C64C19A8B15A00EE5A6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1554C64E19A8B15A00EE5A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1554C65219A8B15A00EE5A6E /* TAH Motion Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Motion Control-Info.plist"; sourceTree = "<group>"; };
+		1554C65419A8B15A00EE5A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1554C65619A8B15A00EE5A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1554C65819A8B15A00EE5A6E /* TAH Motion Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAH Motion Control-Prefix.pch"; sourceTree = "<group>"; };
+		1554C65919A8B15A00EE5A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1554C65A19A8B15A00EE5A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1554C65D19A8B15A00EE5A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1554C66519A8B15A00EE5A6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1554C66B19A8B15A00EE5A6E /* TAH Motion ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAH Motion ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1554C66C19A8B15A00EE5A6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1554C67419A8B15A00EE5A6E /* TAH Motion ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Motion ControlTests-Info.plist"; sourceTree = "<group>"; };
+		1554C67619A8B15A00EE5A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1554C67819A8B15A00EE5A6E /* TAH_Motion_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAH_Motion_ControlTests.m; sourceTree = "<group>"; };
+		1554C68319A8B1E500EE5A6E /* TAHbleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHbleTableController.h; sourceTree = "<group>"; };
+		1554C68419A8B1E500EE5A6E /* TAHbleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHbleTableController.m; sourceTree = "<group>"; };
+		1554C68719A8B20300EE5A6E /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHble.h; sourceTree = "<group>"; };
+		1554C68819A8B20300EE5A6E /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHble.m; sourceTree = "<group>"; };
+		1554C68B19A8B21E00EE5A6E /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		1554C68C19A8B21E00EE5A6E /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		1554C69119A8B27200EE5A6E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1554C69219A8B27200EE5A6E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		1554C69419A8B27B00EE5A6E /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		1554C69519A8B27B00EE5A6E /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		1554C69719A8B28400EE5A6E /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		1554C69819A8B28400EE5A6E /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		1554C69A19A8B31600EE5A6E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1554C69B19A8B31600EE5A6E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1554C69D19A8B43000EE5A6E /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		156BB64319AAFB0600CBA4BD /* Main_iPhone3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPhone3.5.storyboard; path = ../Main_iPhone3.5.storyboard; sourceTree = "<group>"; };
+		156BB64519AB093E00CBA4BD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		156BB65319AB19DE00CBA4BD /* playpause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playpause.png; sourceTree = "<group>"; };
+		156BB65919AB212B00CBA4BD /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backward.png; sourceTree = "<group>"; };
+		156BB65F19AB24E400CBA4BD /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		156BB66519AB3DBF00CBA4BD /* voldown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voldown.png; sourceTree = "<group>"; };
+		156BB66619AB3DBF00CBA4BD /* volup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volup.png; sourceTree = "<group>"; };
+		156BB66919AB46D600CBA4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1591570C19D82C3D007D3A31 /* up white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up white.png"; sourceTree = "<group>"; };
+		1591570D19D82C3D007D3A31 /* up red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up red.png"; sourceTree = "<group>"; };
+		1591571019D8355B007D3A31 /* down white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down white.png"; sourceTree = "<group>"; };
+		1591571119D8355B007D3A31 /* down red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down red.png"; sourceTree = "<group>"; };
+		1597A90119AA327E00D51685 /* MACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACViewController.h; sourceTree = "<group>"; };
+		1597A90219AA327E00D51685 /* MACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACViewController.m; sourceTree = "<group>"; };
+		1597A90419AA328B00D51685 /* WindowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsViewController.h; sourceTree = "<group>"; };
+		1597A90519AA328B00D51685 /* WindowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsViewController.m; sourceTree = "<group>"; };
+		1597A90819AA373B00D51685 /* iTunesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesViewController.h; sourceTree = "<group>"; };
+		1597A90919AA373B00D51685 /* iTunesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesViewController.m; sourceTree = "<group>"; };
+		1598788819D4A47B00B2E81A /* up arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up arrow.png"; sourceTree = "<group>"; };
+		1598788919D4A47B00B2E81A /* down arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down arrow.png"; sourceTree = "<group>"; };
+		159E8D0F19EA52C300725C5F /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		159E8D1319EA560300725C5F /* mediaplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediaplayer.png; sourceTree = "<group>"; };
+		159E8D1519EA573900725C5F /* Presentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Presentation.png; sourceTree = "<group>"; };
+		15A43CF419A9AC48009FBA55 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		15A43CF619A9B1C8009FBA55 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		15A43CF719A9B1C8009FBA55 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		15A43CFA19A9B1D1009FBA55 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1554C64419A8B15A00EE5A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156BB66A19AB46D600CBA4BD /* CoreMotion.framework in Frameworks */,
+				156BB64619AB093E00CBA4BD /* AudioToolbox.framework in Frameworks */,
+				1554C64D19A8B15A00EE5A6E /* CoreGraphics.framework in Frameworks */,
+				1554C64F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */,
+				1554C64B19A8B15A00EE5A6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1554C66819A8B15A00EE5A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1554C66D19A8B15A00EE5A6E /* XCTest.framework in Frameworks */,
+				1554C66F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */,
+				1554C66E19A8B15A00EE5A6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1509419B19D02F870039757B /* Presentation View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1509419C19D02FAE0039757B /* PresentationViewController.h */,
+				1509419D19D02FAE0039757B /* PresentationViewController.m */,
+			);
+			name = "Presentation View Controller";
+			sourceTree = "<group>";
+		};
+		1554C63E19A8B15A00EE5A6E = {
+			isa = PBXGroup;
+			children = (
+				1554C65019A8B15A00EE5A6E /* TAH Motion Control */,
+				1597A8FF19AA325900D51685 /* MAC View Controller */,
+				1597A90019AA326700D51685 /* Windows View Controller */,
+				1554C68E19A8B24A00EE5A6E /* Social View Controller */,
+				1554C68F19A8B25800EE5A6E /* Media View Controller */,
+				1554C69019A8B26200EE5A6E /* Settings View Controller */,
+				1554C68219A8B1C900EE5A6E /* TAH ble Table View */,
+				1554C68619A8B1F700EE5A6E /* TAH Library */,
+				1554C68A19A8B21300EE5A6E /* Custom Cell */,
+				1554C67219A8B15A00EE5A6E /* TAH Motion ControlTests */,
+				1554C64919A8B15A00EE5A6E /* Frameworks */,
+				1554C64819A8B15A00EE5A6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1554C64819A8B15A00EE5A6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1554C64719A8B15A00EE5A6E /* TAH Motion Control.app */,
+				1554C66B19A8B15A00EE5A6E /* TAH Motion ControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1554C64919A8B15A00EE5A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				156BB66919AB46D600CBA4BD /* CoreMotion.framework */,
+				156BB64519AB093E00CBA4BD /* AudioToolbox.framework */,
+				1554C64A19A8B15A00EE5A6E /* Foundation.framework */,
+				1554C64C19A8B15A00EE5A6E /* CoreGraphics.framework */,
+				1554C64E19A8B15A00EE5A6E /* UIKit.framework */,
+				1554C66C19A8B15A00EE5A6E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1554C65019A8B15A00EE5A6E /* TAH Motion Control */ = {
+			isa = PBXGroup;
+			children = (
+				1554C65919A8B15A00EE5A6E /* AppDelegate.h */,
+				1554C65A19A8B15A00EE5A6E /* AppDelegate.m */,
+				156BB64319AAFB0600CBA4BD /* Main_iPhone3.5.storyboard */,
+				1554C65C19A8B15A00EE5A6E /* Main_iPhone.storyboard */,
+				1554C69A19A8B31600EE5A6E /* HomeViewController.h */,
+				1554C69B19A8B31600EE5A6E /* HomeViewController.m */,
+				1554C66519A8B15A00EE5A6E /* Images.xcassets */,
+				1554C65119A8B15A00EE5A6E /* Supporting Files */,
+			);
+			path = "TAH Motion Control";
+			sourceTree = "<group>";
+		};
+		1554C65119A8B15A00EE5A6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69F19A8B43400EE5A6E /* Image Files */,
+				1554C65219A8B15A00EE5A6E /* TAH Motion Control-Info.plist */,
+				1554C65319A8B15A00EE5A6E /* InfoPlist.strings */,
+				1554C65619A8B15A00EE5A6E /* main.m */,
+				1554C65819A8B15A00EE5A6E /* TAH Motion Control-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1554C67219A8B15A00EE5A6E /* TAH Motion ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				1554C67819A8B15A00EE5A6E /* TAH_Motion_ControlTests.m */,
+				1554C67319A8B15A00EE5A6E /* Supporting Files */,
+			);
+			path = "TAH Motion ControlTests";
+			sourceTree = "<group>";
+		};
+		1554C67319A8B15A00EE5A6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1554C67419A8B15A00EE5A6E /* TAH Motion ControlTests-Info.plist */,
+				1554C67519A8B15A00EE5A6E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1554C68219A8B1C900EE5A6E /* TAH ble Table View */ = {
+			isa = PBXGroup;
+			children = (
+				1554C68319A8B1E500EE5A6E /* TAHbleTableController.h */,
+				1554C68419A8B1E500EE5A6E /* TAHbleTableController.m */,
+			);
+			name = "TAH ble Table View";
+			sourceTree = "<group>";
+		};
+		1554C68619A8B1F700EE5A6E /* TAH Library */ = {
+			isa = PBXGroup;
+			children = (
+				1554C68719A8B20300EE5A6E /* TAHble.h */,
+				1554C68819A8B20300EE5A6E /* TAHble.m */,
+			);
+			name = "TAH Library";
+			sourceTree = "<group>";
+		};
+		1554C68A19A8B21300EE5A6E /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1554C68B19A8B21E00EE5A6E /* CustomCell.h */,
+				1554C68C19A8B21E00EE5A6E /* CustomCell.m */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		1554C68E19A8B24A00EE5A6E /* Social View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69719A8B28400EE5A6E /* SocialViewController.h */,
+				1554C69819A8B28400EE5A6E /* SocialViewController.m */,
+			);
+			name = "Social View Controller";
+			sourceTree = "<group>";
+		};
+		1554C68F19A8B25800EE5A6E /* Media View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69419A8B27B00EE5A6E /* MediaViewController.h */,
+				1554C69519A8B27B00EE5A6E /* MediaViewController.m */,
+			);
+			name = "Media View Controller";
+			sourceTree = "<group>";
+		};
+		1554C69019A8B26200EE5A6E /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69119A8B27200EE5A6E /* SettingsViewController.h */,
+				1554C69219A8B27200EE5A6E /* SettingsViewController.m */,
+			);
+			name = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		1554C69F19A8B43400EE5A6E /* Image Files */ = {
+			isa = PBXGroup;
+			children = (
+				159E8D1519EA573900725C5F /* Presentation.png */,
+				159E8D1319EA560300725C5F /* mediaplayer.png */,
+				159E8D0F19EA52C300725C5F /* ring.png */,
+				1591571019D8355B007D3A31 /* down white.png */,
+				1591571119D8355B007D3A31 /* down red.png */,
+				1591570C19D82C3D007D3A31 /* up white.png */,
+				1591570D19D82C3D007D3A31 /* up red.png */,
+				1598788819D4A47B00B2E81A /* up arrow.png */,
+				1598788919D4A47B00B2E81A /* down arrow.png */,
+				1509419919D02F400039757B /* left arrow.png */,
+				1509419719D02ECD0039757B /* right arrow.png */,
+				156BB66519AB3DBF00CBA4BD /* voldown.png */,
+				156BB66619AB3DBF00CBA4BD /* volup.png */,
+				156BB65F19AB24E400CBA4BD /* forward.png */,
+				156BB65919AB212B00CBA4BD /* backward.png */,
+				156BB65319AB19DE00CBA4BD /* playpause.png */,
+				1538C8EC19A9D1B900595557 /* tah.png */,
+				1538C8E619A9D13200595557 /* web forward.png */,
+				1538C8E719A9D13200595557 /* reload.png */,
+				1538C8E819A9D13200595557 /* web backward.png */,
+				1538C8E219A9D12700595557 /* fb.png */,
+				1538C8E319A9D12700595557 /* twitter.png */,
+				15A43CFA19A9B1D1009FBA55 /* share.png */,
+				15A43CF619A9B1C8009FBA55 /* settings.png */,
+				15A43CF719A9B1C8009FBA55 /* youtube.png */,
+				15A43CF419A9AC48009FBA55 /* red.png */,
+				1554C69D19A8B43000EE5A6E /* home.png */,
+			);
+			name = "Image Files";
+			sourceTree = "<group>";
+		};
+		1597A8FF19AA325900D51685 /* MAC View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1597A90119AA327E00D51685 /* MACViewController.h */,
+				1597A90219AA327E00D51685 /* MACViewController.m */,
+				1597A90719AA370D00D51685 /* iTunes View Controller */,
+				1509419B19D02F870039757B /* Presentation View Controller */,
+			);
+			name = "MAC View Controller";
+			sourceTree = "<group>";
+		};
+		1597A90019AA326700D51685 /* Windows View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1597A90419AA328B00D51685 /* WindowsViewController.h */,
+				1597A90519AA328B00D51685 /* WindowsViewController.m */,
+			);
+			name = "Windows View Controller";
+			sourceTree = "<group>";
+		};
+		1597A90719AA370D00D51685 /* iTunes View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1597A90819AA373B00D51685 /* iTunesViewController.h */,
+				1597A90919AA373B00D51685 /* iTunesViewController.m */,
+			);
+			name = "iTunes View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1554C64619A8B15A00EE5A6E /* TAH Motion Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1554C67C19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion Control" */;
+			buildPhases = (
+				1554C64319A8B15A00EE5A6E /* Sources */,
+				1554C64419A8B15A00EE5A6E /* Frameworks */,
+				1554C64519A8B15A00EE5A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TAH Motion Control";
+			productName = "TAH Motion Control";
+			productReference = 1554C64719A8B15A00EE5A6E /* TAH Motion Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1554C66A19A8B15A00EE5A6E /* TAH Motion ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1554C67F19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion ControlTests" */;
+			buildPhases = (
+				1554C66719A8B15A00EE5A6E /* Sources */,
+				1554C66819A8B15A00EE5A6E /* Frameworks */,
+				1554C66919A8B15A00EE5A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1554C67119A8B15A00EE5A6E /* PBXTargetDependency */,
+			);
+			name = "TAH Motion ControlTests";
+			productName = "TAH Motion ControlTests";
+			productReference = 1554C66B19A8B15A00EE5A6E /* TAH Motion ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1554C63F19A8B15A00EE5A6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = dhirajjadhao;
+				TargetAttributes = {
+					1554C64619A8B15A00EE5A6E = {
+						DevelopmentTeam = DUXG8V348H;
+					};
+					1554C66A19A8B15A00EE5A6E = {
+						TestTargetID = 1554C64619A8B15A00EE5A6E;
+					};
+				};
+			};
+			buildConfigurationList = 1554C64219A8B15A00EE5A6E /* Build configuration list for PBXProject "TAH Motion Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1554C63E19A8B15A00EE5A6E;
+			productRefGroup = 1554C64819A8B15A00EE5A6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1554C64619A8B15A00EE5A6E /* TAH Motion Control */,
+				1554C66A19A8B15A00EE5A6E /* TAH Motion ControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1554C64519A8B15A00EE5A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1591571219D8355B007D3A31 /* down white.png in Resources */,
+				159E8D1619EA573900725C5F /* Presentation.png in Resources */,
+				1538C8E919A9D13200595557 /* web forward.png in Resources */,
+				159E8D1019EA52C300725C5F /* ring.png in Resources */,
+				1538C8E419A9D12700595557 /* fb.png in Resources */,
+				15A43CF919A9B1C8009FBA55 /* youtube.png in Resources */,
+				1591570F19D82C3D007D3A31 /* up red.png in Resources */,
+				1509419819D02ECD0039757B /* right arrow.png in Resources */,
+				1591570E19D82C3D007D3A31 /* up white.png in Resources */,
+				15A43CF819A9B1C8009FBA55 /* settings.png in Resources */,
+				1598788A19D4A47B00B2E81A /* up arrow.png in Resources */,
+				1538C8EA19A9D13200595557 /* reload.png in Resources */,
+				1598788B19D4A47B00B2E81A /* down arrow.png in Resources */,
+				156BB66819AB3DBF00CBA4BD /* volup.png in Resources */,
+				1554C69E19A8B43000EE5A6E /* home.png in Resources */,
+				1509419A19D02F400039757B /* left arrow.png in Resources */,
+				156BB64419AAFB0600CBA4BD /* Main_iPhone3.5.storyboard in Resources */,
+				1591571319D8355B007D3A31 /* down red.png in Resources */,
+				1538C8E519A9D12700595557 /* twitter.png in Resources */,
+				1554C66619A8B15A00EE5A6E /* Images.xcassets in Resources */,
+				15A43CF519A9AC48009FBA55 /* red.png in Resources */,
+				156BB66019AB24E400CBA4BD /* forward.png in Resources */,
+				159E8D1419EA560300725C5F /* mediaplayer.png in Resources */,
+				15A43CFB19A9B1D1009FBA55 /* share.png in Resources */,
+				1538C8EB19A9D13200595557 /* web backward.png in Resources */,
+				156BB66719AB3DBF00CBA4BD /* voldown.png in Resources */,
+				1538C8ED19A9D1B900595557 /* tah.png in Resources */,
+				156BB65419AB19DE00CBA4BD /* playpause.png in Resources */,
+				156BB65B19AB212B00CBA4BD /* backward.png in Resources */,
+				1554C65E19A8B15A00EE5A6E /* Main_iPhone.storyboard in Resources */,
+				1554C65519A8B15A00EE5A6E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1554C66919A8B15A00EE5A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1554C67719A8B15A00EE5A6E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1554C64319A8B15A00EE5A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1554C68519A8B1E500EE5A6E /* TAHbleTableController.m in Sources */,
+				1597A90619AA328B00D51685 /* WindowsViewController.m in Sources */,
+				1554C65B19A8B15A00EE5A6E /* AppDelegate.m in Sources */,
+				1554C65719A8B15A00EE5A6E /* main.m in Sources */,
+				1554C69919A8B28400EE5A6E /* SocialViewController.m in Sources */,
+				1554C69619A8B27B00EE5A6E /* MediaViewController.m in Sources */,
+				1554C69C19A8B31600EE5A6E /* HomeViewController.m in Sources */,
+				1554C69319A8B27200EE5A6E /* SettingsViewController.m in Sources */,
+				1509419E19D02FAE0039757B /* PresentationViewController.m in Sources */,
+				1597A90A19AA373B00D51685 /* iTunesViewController.m in Sources */,
+				1554C68919A8B20300EE5A6E /* TAHble.m in Sources */,
+				1597A90319AA327E00D51685 /* MACViewController.m in Sources */,
+				1554C68D19A8B21E00EE5A6E /* CustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1554C66719A8B15A00EE5A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1554C67919A8B15A00EE5A6E /* TAH_Motion_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1554C67119A8B15A00EE5A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1554C64619A8B15A00EE5A6E /* TAH Motion Control */;
+			targetProxy = 1554C67019A8B15A00EE5A6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1554C65319A8B15A00EE5A6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1554C65419A8B15A00EE5A6E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1554C65C19A8B15A00EE5A6E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1554C65D19A8B15A00EE5A6E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1554C67519A8B15A00EE5A6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1554C67619A8B15A00EE5A6E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1554C67A19A8B15A00EE5A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1554C67B19A8B15A00EE5A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1554C67D19A8B15A00EE5A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "TAH Motion Control/TAH Motion Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1554C67E19A8B15A00EE5A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "TAH Motion Control/TAH Motion Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1554C68019A8B15A00EE5A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Motion Control.app/TAH Motion Control";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAH Motion ControlTests/TAH Motion ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1554C68119A8B15A00EE5A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Motion Control.app/TAH Motion Control";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "TAH Motion ControlTests/TAH Motion ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1554C64219A8B15A00EE5A6E /* Build configuration list for PBXProject "TAH Motion Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1554C67A19A8B15A00EE5A6E /* Debug */,
+				1554C67B19A8B15A00EE5A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1554C67C19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1554C67D19A8B15A00EE5A6E /* Debug */,
+				1554C67E19A8B15A00EE5A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1554C67F19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1554C68019A8B15A00EE5A6E /* Debug */,
+				1554C68119A8B15A00EE5A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1554C63F19A8B15A00EE5A6E /* Project object */;
+}
