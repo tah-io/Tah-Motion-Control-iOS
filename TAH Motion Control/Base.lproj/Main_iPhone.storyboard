@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Udm-wy-7ir">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Udm-wy-7ir">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--HOME-->
+        <!--Home-->
         <scene sceneID="EKg-Op-rms">
             <objects>
                 <viewController id="KAC-Tx-3xO" customClass="HomeViewController" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3nv-NQ-Krq">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -159,7 +159,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="7gl-YU-NP1">
+                    <navigationItem key="navigationItem" title="Home" id="7gl-YU-NP1">
                         <barButtonItem key="backBarButtonItem" title="Scanner" id="Qdo-p0-trM"/>
                     </navigationItem>
                     <connections>
@@ -171,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="251" y="-547"/>
         </scene>
-        <!--TAH Scanner-->
+        <!--Discover-->
         <scene sceneID="aBO-UD-rMQ">
             <objects>
                 <viewController id="nsd-KV-xAL" customClass="TAHbleTableController" sceneMemberID="viewController">
@@ -191,7 +191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G5d-eO-AUm">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -226,7 +226,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TAH Scanner" id="lYs-nC-r6I">
+                    <navigationItem key="navigationItem" title="Discover" id="lYs-nC-r6I">
                         <barButtonItem key="rightBarButtonItem" id="aFq-EL-tob">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wiQ-ga-vE0">
                                 <rect key="frame" x="274" y="7" width="30" height="29"/>
@@ -270,7 +270,7 @@
             </objects>
             <point key="canvasLocation" x="-759" y="-547"/>
         </scene>
-        <!--Media View Controller-->
+        <!--YouTube-->
         <scene sceneID="fbv-ox-iLf">
             <objects>
                 <viewController id="Dvg-x9-raH" customClass="MediaViewController" sceneMemberID="viewController">
@@ -292,7 +292,7 @@
                                 </connections>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jcv-lc-aSm">
-                                <rect key="frame" x="90" y="517" width="30" height="30"/>
+                                <rect key="frame" x="90" y="522" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="web backward.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -302,7 +302,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eob-KD-tlc">
-                                <rect key="frame" x="144" y="517" width="30" height="30"/>
+                                <rect key="frame" x="144" y="522" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reload.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -312,7 +312,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Ky-Wx-1xZ">
-                                <rect key="frame" x="200" y="517" width="30" height="30"/>
+                                <rect key="frame" x="200" y="522" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="web forward.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -322,7 +322,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="61s-bC-gG8">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -334,13 +334,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" id="tXS-dq-QJA">
-                                <rect key="frame" x="266" y="522" width="20" height="20"/>
+                                <rect key="frame" x="266" y="527" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="f9y-Db-WU7"/>
+                    <navigationItem key="navigationItem" title="YouTube" id="f9y-Db-WU7"/>
                     <connections>
                         <outlet property="ConnectionStatusLabel" destination="61s-bC-gG8" id="ElR-0e-ayV"/>
                         <outlet property="activityind" destination="tXS-dq-QJA" id="Gt4-8i-0uU"/>
@@ -351,7 +351,7 @@
             </objects>
             <point key="canvasLocation" x="1213" y="-229"/>
         </scene>
-        <!--SETTINGS-->
+        <!--Settings-->
         <scene sceneID="Ygv-Lb-vEY">
             <objects>
                 <viewController id="Hdh-Jb-XiN" customClass="SettingsViewController" sceneMemberID="viewController">
@@ -363,10 +363,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tE9-i7-b3x">
-                                <rect key="frame" x="126" y="533" width="68" height="19"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tE9-i7-b3x">
+                                <rect key="frame" x="126" y="536" width="68" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -375,7 +375,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.68235296010971069" green="0.15294118225574493" blue="0.24705883860588074" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.7019608021" green="0.14509804549999999" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -387,8 +387,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.68235296010971069" green="0.15294118225574493" blue="0.24705883860588074" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.7019608021" green="0.14509804549999999" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="Hdh-Jb-XiN" id="ucc-vL-h56"/>
@@ -398,7 +398,7 @@
                                 <rect key="frame" x="0.0" y="474" width="320" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Update">
                                     <color key="titleColor" red="0.68235296010971069" green="0.14901961386203766" blue="0.24313727021217346" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -420,7 +420,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Q7-lb-veT">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="6"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -434,7 +434,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SETTINGS" id="m4T-kv-fuD"/>
+                    <navigationItem key="navigationItem" title="Settings" id="m4T-kv-fuD"/>
                     <connections>
                         <outlet property="ApplySettings" destination="yNK-TC-y3b" id="x1C-Ms-wf0"/>
                         <outlet property="ConnectionStatusLabel" destination="2Q7-lb-veT" id="FeR-Ri-73A"/>
@@ -447,7 +447,7 @@
             </objects>
             <point key="canvasLocation" x="1600" y="-229"/>
         </scene>
-        <!--Social View Controller-->
+        <!--Share-->
         <scene sceneID="s2g-sK-Lz6">
             <objects>
                 <viewController id="XUB-2f-SKC" customClass="SocialViewController" sceneMemberID="viewController">
@@ -460,7 +460,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PzN-AT-nVk">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="6"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -492,21 +492,21 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like and Follow us on Facebook and Twitter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N4h-IW-fAp">
                                 <rect key="frame" x="78" y="416" width="165" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tah.io" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ae8-It-4YU">
                                 <rect key="frame" x="135" y="503" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XLd-1f-sjO"/>
+                    <navigationItem key="navigationItem" title="Share" id="XLd-1f-sjO"/>
                     <connections>
                         <outlet property="ConnectionStatusLabel" destination="PzN-AT-nVk" id="oAf-XY-tnH"/>
                     </connections>
@@ -515,7 +515,7 @@
             </objects>
             <point key="canvasLocation" x="815" y="-229"/>
         </scene>
-        <!--View Controller-->
+        <!--Mac Controller-->
         <scene sceneID="Hiu-Tv-XyJ">
             <objects>
                 <viewController id="Keo-Vk-2Yn" customClass="MACViewController" sceneMemberID="viewController">
@@ -528,7 +528,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ctE-t6-ezG">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -562,7 +562,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Dbm-mq-4XU"/>
+                    <navigationItem key="navigationItem" title="Mac Controller" id="Dbm-mq-4XU"/>
                     <connections>
                         <outlet property="ConnectionStatusLabel" destination="ctE-t6-ezG" id="x7E-Td-Oel"/>
                     </connections>
@@ -571,7 +571,7 @@
             </objects>
             <point key="canvasLocation" x="815" y="-2041"/>
         </scene>
-        <!--Windows View Controller-->
+        <!--Windows Controller-->
         <scene sceneID="Trg-ld-Brb">
             <objects>
                 <viewController id="yds-Hd-ig5" customClass="WindowsViewController" sceneMemberID="viewController">
@@ -584,7 +584,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jWO-Ur-40E">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -608,7 +608,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g8q-Xg-mLi"/>
+                    <navigationItem key="navigationItem" title="Windows Controller" id="g8q-Xg-mLi"/>
                     <connections>
                         <outlet property="ConnectionStatusLabel" destination="jWO-Ur-40E" id="Xo0-J0-GU4"/>
                     </connections>
@@ -617,7 +617,7 @@
             </objects>
             <point key="canvasLocation" x="815" y="-1078"/>
         </scene>
-        <!--I Tunes View Controller-->
+        <!--Media Player-->
         <scene sceneID="3OA-CO-ikk">
             <objects>
                 <viewController id="M60-Tn-bJq" customClass="iTunesViewController" sceneMemberID="viewController">
@@ -630,7 +630,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hGi-FQ-DUB">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -696,7 +696,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dn8-PK-A0i"/>
+                    <navigationItem key="navigationItem" title="Media Player" id="dn8-PK-A0i"/>
                     <connections>
                         <outlet property="ConnectionStatusLabel" destination="hGi-FQ-DUB" id="XjE-AJ-4lF"/>
                         <outlet property="next" destination="KTG-su-9n3" id="aik-Cy-rFZ"/>
@@ -712,7 +712,7 @@
             </objects>
             <point key="canvasLocation" x="1390" y="-2430"/>
         </scene>
-        <!--Presentation View Controller-->
+        <!--Presentation-->
         <scene sceneID="otW-F9-qT9">
             <objects>
                 <viewController id="5ZV-lD-CsR" customClass="PresentationViewController" sceneMemberID="viewController">
@@ -726,7 +726,7 @@
                                 <gestureRecognizers/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ajq-2K-iFk">
-                                <rect key="frame" x="0.0" y="554" width="320" height="14"/>
+                                <rect key="frame" x="0.0" y="564" width="320" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -770,7 +770,7 @@
                             <outletCollection property="gestureRecognizers" destination="MKP-uQ-Lf7" appends="YES" id="xEm-1t-t6P"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="eaa-vT-Puq"/>
+                    <navigationItem key="navigationItem" title="Presentation" id="eaa-vT-Puq"/>
                     <connections>
                         <outlet property="ConnectionStatusLabel" destination="Ajq-2K-iFk" id="ihv-cb-kZS"/>
                         <outlet property="downswipe" destination="MKP-uQ-Lf7" id="Bv5-Ce-ZIu"/>

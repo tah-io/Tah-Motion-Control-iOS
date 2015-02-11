@@ -247,11 +247,7 @@
         
         
         NSLog(@"Right to Left");
-        
-        NSString *RtoL = @"65M";
-        
-        command = [NSString stringWithFormat:@"%@",RtoL];
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Left];
     }
     
     
@@ -264,12 +260,7 @@
         
         
         NSLog(@"Left to Right");
-        
-        NSString *LtoR = @"56M";
-        
-        command = [NSString stringWithFormat:@"%@",LtoR];
-        
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Right];
         
     }
     
@@ -283,13 +274,7 @@
         
         
         NSLog(@"Up to Down");
-        
-        
-        NSString *UtoD = @"34M";
-        
-        command = [NSString stringWithFormat:@"%@",UtoD];
-        
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Down];
         
     }
     
@@ -301,36 +286,15 @@
         
         
         NSLog(@"Down to Up");
-        
-        NSString *DtoU = @"43M";
-        
-        command = [NSString stringWithFormat:@"%@",DtoU];
-        
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Up];
     }
     
+
     
 }
 
 
-- (void)sendCommand
-{
-    
-    //////// Bluetoth Data to be Sent will come below ///////////
-    
-    NSLog(@"%@",command);  // Shows Commans Value in Xcode O/P WIndow
-    
-    
-    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    
-    [sensor write:sensor.activePeripheral data:data];
-    
-    /////////////////////////////////////////////////////////////
-    
-    [self updateall];
-    
-}
+
 
 
 

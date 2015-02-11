@@ -134,13 +134,7 @@
 - (IBAction)leftswipe:(id)sender {
     
     NSLog(@"Left Swipe");
-    
-    
-    NSString *command = @"10M";
-    
-    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
+    [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_LEFT_ARROW];
     
     
 }
@@ -150,12 +144,7 @@
 - (IBAction)rightswipe:(id)sender {
     
     NSLog(@"Right Swipe");
-    
-    NSString *command = @"20M";
-    
-    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
+    [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_RIGHT_ARROW];
     
     
     
@@ -164,12 +153,7 @@
 - (IBAction)upswipe:(id)sender {
     
     NSLog(@"Up Swipe");
-    
-    NSString *command = @"50M";
-    
-    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
+    [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_UP_ARROW];
     
     
     
@@ -178,12 +162,7 @@
 - (IBAction)downswipe:(id)sender {
     
     NSLog(@"Down Swipe");
-    
-    NSString *command = @"40M";
-    
-    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
+    [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_DOWN_ARROW];
     
     
     

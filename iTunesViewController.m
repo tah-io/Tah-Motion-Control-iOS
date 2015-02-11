@@ -184,161 +184,73 @@
     
 
     
-    if (rotation.x >= 6.0  && !volume.touchInside) {
-        
-        
+    if (rotation.x >= 6.0  && !volume.touchInside)
+    {
         
         NSLog(@"Right to Left");
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Left];
         
-        
-        
-        NSString *end=@"M";
-        
-        NSString *L = @"5";
-        NSString *R = @"6";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",R,L,end];
-        [self sendCommand];
     }
-    
-    
-    
-    
     
     
     else if (rotation.x <= -6.0  &&  !volume.touchInside)
     {
         
-        
         NSLog(@"Left to Right");
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *L = @"5";
-        NSString *R = @"6";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",L,R,end];
-        
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Right];
         
     }
     
     else if (previous.touchInside)
     {
         
-        
         NSLog(@"Left Arrow Key");
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *L = @"2";
-        NSString *R = @"0";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",L,R,end];
-        
-        [self sendCommand];
+        [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_LEFT_ARROW];
         
     }
     
-    if (next.touchInside) {
-        
-        
+    if (next.touchInside)
+    {
         
         NSLog(@"Right Arrow key");
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *L = @"1";
-        NSString *R = @"0";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",L,R,end];
-        [self sendCommand];
+        [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_RIGHT_ARROW];
     }
     
     
     
-    else if (rotation.z >= 6.0  && !volume.touchInside ) {
-        
-        
+    else if (rotation.z >= 6.0  && !volume.touchInside )
+    {
         
         NSLog(@"Up to Down");
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *U = @"3";
-        NSString *D = @"4";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",U,D,end];
-        
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Down];
         
     }
     
-    else if (play.touchInside) {
-        
-        
+    else if (play.touchInside)
+    {
         
         NSLog(@"Space Bar");
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *U = @"3";
-        NSString *D = @"0";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",U,D,end];
-        
-        [self sendCommand];
+        [sensor TAHkeyPress:sensor.activePeripheral Press:KEY_SPACE];
         
     }
-    
-    
     
     
     else if (rotation.z <= -6.0)
     {
         
-        
-        
         NSLog(@"Down to Up");
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *U = @"3";
-        NSString *D = @"4";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",D,U,end];
-        
-        [self sendCommand];
+        [sensor TAHTrackPad:sensor.activePeripheral Swipe:Up];
     }
     
     
    else if(!volume.touchInside)
     {
-        
-        
-        
-        NSString *end=@"M";
-        
-        NSString *M = @"0";
-        NSString *N = @"0";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",M,N,end];
-        
-        [self sendCommand];
+        command = @"0,0,0,0M";
+        NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+        [sensor write:sensor.activePeripheral data:data];
+
     }
-    
+
     
 }
 
@@ -358,15 +270,7 @@
  
         [self volumeupanimate];
         [volumedownimage stopAnimating];
-        
-        NSString *end=@"M";
-        
-        NSString *M = @"9";
-        NSString *N = @"6";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",M,N,end];
-        
-        [self sendCommand];
+        [sensor TAHkeyPress:sensor.activePeripheral Press:VolumeUp];
     }
     
     
@@ -375,18 +279,10 @@
         
         [self volumedownanimate];
         [volumeupimage stopAnimating];
-        
-        NSString *end=@"M";
-        
-        NSString *M = @"9";
-        NSString *N = @"7";
-        
-        command = [NSString stringWithFormat:@"%@%@%@",M,N,end];
-        
-        [self sendCommand];
+        [sensor TAHkeyPress:sensor.activePeripheral Press:VolumeDown];
     }
     
-    
+    [self updateall];
     
 }
 
@@ -411,25 +307,6 @@
 
 
 
-
-- (void)sendCommand
-{
-    
-    //////// Bluetoth Data to be Sent will come below ///////////
-    
-    NSLog(@"%@",command);  // Shows Commans Value in Xcode O/P WIndow
-    
-    
-    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    
-    [sensor write:sensor.activePeripheral data:data];
-    
-    /////////////////////////////////////////////////////////////
-    
-    [self updateall];
-    
-}
 
 
 
